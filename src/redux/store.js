@@ -2,9 +2,11 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';// eslint-
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
-const initialState = {};
+const initialState = [];
 const reducer = (state = initialState, action) => {
-  // Do something here
+  if (action.type == 'updateCountryData') {
+      return [...state , action.payload]
+  }
 }
 
 const store = createStore(

@@ -5,12 +5,12 @@ import { useDispatch} from "react-redux";
 const Main = () => {
     const dispatch = useDispatch();
     const action = {
-        type: 'ADD_TO_CART',
+        type: 'updateCountryData',
         payload: {
-          product: 'margarine',
-          quantity: 4
+          test:'test'
         }
       }
+      dispatch(action)
       dispatch(action)
     return (
         <div>
