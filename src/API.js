@@ -11,3 +11,11 @@ export const getAllData = () => axios.get(baseurl)
 .catch(error => {
     console.error('There was an error!', error);
 });
+
+export const fetchCountryInfo = () => async (dispatch) => {
+    const response = await axios.get(baseurl);
+    dispatch({
+      type: 'updateCountryData',
+      payload: response.data.Countries,
+    });
+  };

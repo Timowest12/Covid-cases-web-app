@@ -1,17 +1,15 @@
-import React from 'react'
-import { getAllData } from '../API'
+import React, { useEffect } from 'react'
+import { fetchCountryInfo, getAllData } from '../API'
 import { useDispatch} from "react-redux";
 
 const Main = () => {
     const dispatch = useDispatch();
-    const action = {
-        type: 'updateCountryData',
-        payload: {
-          test:'test'
-        }
-      }
-      dispatch(action)
-      dispatch(action)
+    
+    
+    useEffect(() => {
+        dispatch(fetchCountryInfo())
+     }, [])
+     
     return (
         <div>
             hello
