@@ -44,6 +44,12 @@ const InfoPage = () => {
                     <div className="infoStatright">{countryObj.NewDeaths}</div>
                 </div>
             </div>
+            <div className="infoStatsBlock">
+                <div className="infoStat">
+                    <div className="infoStatLeft">new recovered:</div>
+                    <div className="infoStatright">{countryObj.NewRecovered}</div>
+                </div>
+            </div>
         </div>
     )
 }
