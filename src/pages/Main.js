@@ -12,6 +12,7 @@ const Main = () => {
         dispatch(fetchCountryInfo())
       },[]);
       const countries = useSelector((state) => state);
+     // alert(countries.length)
     return (
         <div>
             <div className='mainCountryWrapper'>
