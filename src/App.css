@@ -38,10 +38,13 @@
 }
 .mainCountryBlock{
   width:200px;
-  height: 200px;
+  
   display: inline-block;
 }
 .mainCountryWrapper{
   display: flex;
   flex-wrap: wrap;
+}
+.countryImg{
+  width: 50%;
 }
