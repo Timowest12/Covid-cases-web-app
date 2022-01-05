@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const MainBlock = (props) => {
     return (
-        <Link to='/infopage'>
+        <Link to={`/infopage/${props.obj.Country}`}>
         <div className='mainCountryBlock'>
             <div>
             {props.obj.Country}
