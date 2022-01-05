@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainBlock = (props) => {
     return (
-        <div>
+        <div class='mainCountryBlock'>
             {props.txt}
         </div>
     )
