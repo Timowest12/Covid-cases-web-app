@@ -14,9 +14,11 @@ const Main = () => {
       const countries = useSelector((state) => state);
     return (
         <div>
+            <div className='mainCountryWrapper'>
           {countries.map((countrObj) => 
-              <MainBlock txt={countrObj.Country} />
+              <MainBlock obj={countrObj} />
           )}
+          </div>
           hello
           
         </div>

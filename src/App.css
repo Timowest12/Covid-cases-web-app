@@ -37,7 +37,11 @@
   }
 }
 .mainCountryBlock{
-  padding: 10px;
-  background-color: #61dafb;
+  width:200px;
+  height: 200px;
   display: inline-block;
+}
+.mainCountryWrapper{
+  display: flex;
+  flex-wrap: wrap;
 }
