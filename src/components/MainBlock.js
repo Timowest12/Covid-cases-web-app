@@ -1,19 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
+const MainBlock = props => {
+    
+    let curmetric = [props]
 
-const MainBlock = (props) => {
-    return (
-        <Link to={`/infopage/${props.obj.Country}`}>
-        <div className='mainCountryBlock'>
-            <div>
-            {props.obj.Country}
-            
-            </div>
-            <img className='countryImg' src={`/all/${props.obj.CountryCode.toLowerCase()}/vector.svg`} alt="" />
+  return (
+    <Link to={`/infopage/${props.obj.Country}`}>
+      <div className="mainCountryBlock">
+        <img
+          className="countryImg"
+          src={`/all/${props.obj.CountryCode.toLowerCase()}/vector.svg`}
+          alt=""
+        />
+        <div className="mainBlockText">
+
+        <div>{props.obj.Country}</div>
+        <div>{props.obj[props.curmetric == false ? 'TotalConfirmed' : props.curmetric]}</div>
         </div>
-        </Link>
-    )
-}
+      </div>
+    </Link>
+  );
+};
 
-export default MainBlock
+export default MainBlock;

@@ -13,7 +13,7 @@ export const baseurl = 'https://api.covid19api.com/summary';
 const initialState = [];
 const reducer = (state = initialState, action) => {
    if (action.type === 'updateCountryData') {
-      return action.payload
+      return action.payload.sort((a,b) => b["TotalConfirmed"] - a["TotalConfirmed"])
   }else{
       return []
   }
