@@ -22,8 +22,8 @@ type `cd space travelers hub` to change directory to the folder of the project
 in your terminal type `npm install` or `npm i` to install all dependencies
 
 run `npm start` in your terminal
-![localhost_3000_ (5)](https://user-images.githubusercontent.com/13661892/148394936-c169ea43-9088-4e6b-be77-574ce5164e8a.png | width=100)
-![localhost_3000_ (4)](https://user-images.githubusercontent.com/13661892/148394950-c553706f-b677-4341-b04f-9594706c7343.png | width=100)
+![localhost_3000_ (5)](https://user-images.githubusercontent.com/13661892/148394936-c169ea43-9088-4e6b-be77-574ce5164e8a.png)
+![localhost_3000_ (4)](https://user-images.githubusercontent.com/13661892/148394950-c553706f-b677-4341-b04f-9594706c7343.png)
 
 
 ## Authors
