@@ -1,6 +1,52 @@
-# Getting Started with Create React App
+# Covid cases project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project uses the Covid cases API to pull in a list of active corona infection and related data!
+![1128972](https://user-images.githubusercontent.com/13661892/147085665-93613de4-fb9b-4c4f-ac14-8ad8d50d6373.png)
+
+
+This project was created using React(JavaScript) and Redux,
+other technologies used: Axios, Thunk, CSS, Git
+
+### Usage
+
+Download it directly by ZIP, open the index file in a text editor, and you can change the content to match your own.
+CD into the root folder and run npm i(NodeJs and NPM required)
+run npm start to launch project on local server
+
+alternatively:
+
+open your terminal
+type `git clone` https://github.com/Timowest12/space-traveler-s-hub.git
+
+type `cd space travelers hub` to change directory to the folder of the project
+
+in your terminal type `npm install` or `npm i` to install all dependencies
+
+run `npm start` in your terminal
+![localhost_3000_ (5)](https://user-images.githubusercontent.com/13661892/148394936-c169ea43-9088-4e6b-be77-574ce5164e8a.png)
+![localhost_3000_ (4)](https://user-images.githubusercontent.com/13661892/148394950-c553706f-b677-4341-b04f-9594706c7343.png)
+
+
+## Authors
+
+
+👤 **Timo Wester**
+
+- GitHub: [@githubhandle](https://github.com/Timowest12)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/timo-wester-6a0282a7/)
+
+![Timo's GitHub stats](https://github-readme-stats.vercel.app/api?username=Timowest12&count_private=true&theme=dark&show_icons=true)
+
+
+
+## Acknowledgments
+
+- Microverse
+- Original design idea by Nelson Sakwa on Behance.
+
+## 📝 License
+
+This project is [MIT](./MIT) licensed.
 
 ## Available Scripts
 
