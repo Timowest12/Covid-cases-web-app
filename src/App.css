@@ -1,0 +1,164 @@
+
+:root {
+  --accentcolor: #ec4c8a;
+  --mainbgcolor: #f94e8f;
+  --stripecolor: #df4782;
+  --blockcolor1: #dc4781;
+  --blockcolor2: #d14479;
+}
+
+.App {
+  text-align: center;
+  font-size: 120%;
+  color: white;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: var(--mainbgcolor);
+}
+
+nav {
+  background-color: var(--accentcolor);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  font-size: 110%;
+}
+
+.toInfoCircle {
+  position: relative;
+  top: -99px;
+  left: 26px;
+  color: white;
+}
+
+.mainCountryBlock {
+  min-width: 200px;
+  padding: 20px 0;
+  display: inline-block;
+}
+
+.mainCountryWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainHeaderBlockRight {
+  font-weight: 900;
+  font-size: 150%;
+}
+
+.mainCountryWrapper > * {
+  flex: 1;
+}
+
+.mainTxtStripe {
+  background-color: var(--stripecolor);
+  text-align: left;
+  padding-left: 5px;
+}
+
+.countryImg {
+  width: 50%;
+  color: blue !important;
+}
+
+.infohead {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.countryImgInfoPage {
+  width: 200px;
+}
+
+.infoStat {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 130%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.infoStatsBlock:nth-child(odd) {
+  background-color: var(--blockcolor1);
+}
+
+.infoStatsBlock:nth-child(even) {
+  background-color: var(--blockcolor2);
+}
+
+.indicationStripe {
+  display: flex;
+  background-color: var(--mainbgcolor);
+  text-align: left;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  align-items: center;
+  font-size: 90%;
+  font-weight: 900;
+}
+
+.selects > * {
+  height: 30px;
+  margin-left: 5px;
+}
+
+select {
+  background-color: var(--mainbgcolor);
+  border: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 90%;
+}
+
+.infoheaderRight {
+  font-size: 130%;
+}
+
+.mainHeaderBlock {
+  background-color: var(--mainbgcolor);
+  display: flex;
+  align-items: center;
+}
+
+.mainHeaderBlock > * {
+  width: 50%;
+  padding: 20px;
+}
+
+.txtAlighnRight {
+  text-align: right;
+}
+
+.evencol {
+  background-color: var(--blockcolor1);
+}
+
+.oddcol {
+  background-color: var(--blockcolor2);
+}
+
+.mainBlockText {
+  display: block;
+  height: 60px;
+  padding-right: 5px;
+  color: white;
+  text-align: right;
+}
+
+.mainBlockCountryTxt {
+  font-weight: 700;
+}
+
+.mainBlockCountryNmbr {
+  font-size: 80%;
+  font-weight: 200;
+}
