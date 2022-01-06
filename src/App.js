@@ -22,7 +22,7 @@ function App() {
           <Route index element={<Navbar />} />
 
         </Route>
-        <Route path="/infopage/:country" element={<InfoPage />}>
+        <Route path="/infopage/:country" element={<><Navbar /><InfoPage /></>}>
           {/* <Route index element={<Main />} /> */}
 
         </Route>
