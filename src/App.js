@@ -18,11 +18,11 @@ function App() {
        <Provider store={store}>
      <BrowserRouter>
       <Routes>
-        <Route path="/" element={<><Navbar /><Main /></>}>
+        <Route path="/" element={<><Navbar page='Country data' /><Main /></>}>
           <Route index element={<Navbar />} />
 
         </Route>
-        <Route path="/infopage/:country" element={<><Navbar /><InfoPage /></>}>
+        <Route path="/infopage/:country" element={<><Navbar page='Country data' /><InfoPage /></>}>
           {/* <Route index element={<Main />} /> */}
 
         </Route>
