@@ -8,6 +8,7 @@ exports[`test if mainheaderblock renders correctly 1`] = `
     className="mainHeaderBlockLeft"
   >
     <img
+      alt="worldmap"
       src="/worldMap.svg"
     />
   </div>
