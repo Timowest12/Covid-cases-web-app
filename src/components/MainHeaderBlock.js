@@ -5,7 +5,7 @@ const MainHeaderBlock = () => {
         <div className='mainHeaderBlock'>
             <div className="mainHeaderBlockLeft"><img src='/worldMap.svg' /></div>
             <div className="mainHeaderBlockRight">
-                Covid stats
+                Covid stats for each country around the world
 
             </div>
         </div>
