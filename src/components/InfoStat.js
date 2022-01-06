@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 const InfoStat = (props) => {
-    return (
-        <div className="infoStatsBlock">
-                <div className="infoStat">
-                    <div className="infoStatLeft">{props.metric}</div>
-                    <div className="infoStatright">{props.amount}</div>
-                </div>
-            </div>
-            
-    )
-}
+  const { amount, metric } = props;
+  return (
+    <div className="infoStatsBlock">
+      <div className="infoStat">
+        <div className="infoStatLeft">{metric}</div>
+        <div className="infoStatright">{amount}</div>
+      </div>
+    </div>
+  );
+};
 
-export default InfoStat
+export default InfoStat;
