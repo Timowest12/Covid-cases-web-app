@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsArrowRightCircle } from 'react-icons/bs';
 
 const MainBlock = props => {
     
@@ -9,6 +10,7 @@ const MainBlock = props => {
   return (
       <>
     <Link to={`/infopage/${props.obj.Country}`}>
+          <BsArrowRightCircle className='toInfoCircle' />
       <div className="mainCountryBlock">
         <img
           className="countryImg"

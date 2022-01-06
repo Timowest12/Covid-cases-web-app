@@ -42,6 +42,12 @@ nav{
   justify-content: space-between;
   padding:5px;
 }
+.toInfoCircle{
+ position: relative;
+ left:180px;
+ top:-117px;
+ 
+}
 .mainCountryBlock{
   width:200px;
   
