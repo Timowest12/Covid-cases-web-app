@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if navbar renders correctly 1`] = `
+<nav>
+  <div />
+  <div
+    className="right"
+  />
+  <div
+    className="right"
+  >
+          
+  </div>
+</nav>
+`;

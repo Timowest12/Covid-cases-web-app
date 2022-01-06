@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test if mainheaderblock renders correctly 1`] = `
+<div
+  className="mainHeaderBlock"
+>
+  <div
+    className="mainHeaderBlockLeft"
+  >
+    <img
+      src="/worldMap.svg"
+    />
+  </div>
+  <div
+    className="mainHeaderBlockRight"
+  >
+    Covid stats for each country around the world
+  </div>
+</div>
+`;

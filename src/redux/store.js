@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { createStore, combineReducers, applyMiddleware } from 'redux';// eslint-disable-line
+import { createStore, applyMiddleware } from 'redux';// eslint-disable-line
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
@@ -17,7 +17,6 @@ const reducer = (state = initialState, action) => {
   }else{
       return []
   }
-  //return [...state,action.payload]
 }
 
 const store = createStore(
