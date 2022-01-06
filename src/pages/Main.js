@@ -58,6 +58,9 @@ const Main = () => {
                 </select>
                 </div>
             </div>
+            <div className="mainTxtStripe">
+                All countries
+            </div>
             <div className='mainCountryWrapper'>
           {countries.map((countrObj,index) => 
               <MainBlock index={index} obj={countrObj} key={uuidv4()} curmetric={countriesupdated} />

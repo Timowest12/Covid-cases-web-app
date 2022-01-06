@@ -47,6 +47,7 @@ const MainBlock = props => {
           src={image}
           alt=""
         />
+        
         <BsArrowRightCircle className='toInfoCircle' />
         <div className="mainBlockText txtAighnRight">
 
