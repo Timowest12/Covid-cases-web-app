@@ -20,9 +20,10 @@ nav{
   background-color: var(--accentcolor);
   display: flex;
   justify-content: space-between;
-  padding:5px;
+  padding:10px;
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 800;
+  font-size: 110%;
 }
 .toInfoCircle{
   position: relative;
@@ -73,8 +74,10 @@ align-items: center;
   padding:30px;
   display: flex;
   justify-content: space-between;
-  
-  font-size: 200%;
+  font-weight: 100;
+  font-size: 130%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 .infoStatsBlock:nth-child(odd){
   background-color: var(--blockcolor1);
@@ -87,11 +90,22 @@ align-items: center;
   background-color: var(--mainbgcolor);
   text-align: left;
   padding:10px;
+  font-family: 'Lato', sans-serif;
+  align-items: center;
+  font-size: 90%;
+  font-weight: 900;
 }
 .selects > *{
   height: 30px;
   margin-left: 5px;
   
+}
+select{
+  background-color:var(--mainbgcolor);
+  border:none;
+  color:white;
+  font-family: 'Lato', sans-serif;
+  font-size: 90%;
 }
 .infoheaderRight{
   font-size: 130%;

@@ -44,7 +44,7 @@ const Main = () => {
         <div>
             <MainHeaderBlock />
             <div className="indicationStripe">
-                <div className="indicationStripeText">stats sorted by: </div>
+                <div className="indicationStripeText">sort stats by: </div>
                 <div className="selects">
                 <select onChange={changeMetric} >
                     <option value="TotalConfirmed">Total cases</option>
