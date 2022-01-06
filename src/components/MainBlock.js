@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 const MainBlock = props => {
     
     let curmetric = [props]
+    let image = `/all/${props.obj.CountryCode.toLowerCase()}/vector.svg`;
 
   return (
+      <>
     <Link to={`/infopage/${props.obj.Country}`}>
       <div className="mainCountryBlock">
         <img
           className="countryImg"
-          src={`/all/${props.obj.CountryCode.toLowerCase()}/vector.svg`}
+          src={image}
           alt=""
         />
         <div className="mainBlockText">
@@ -20,6 +22,7 @@ const MainBlock = props => {
         </div>
       </div>
     </Link>
+    </>
   );
 };
 
