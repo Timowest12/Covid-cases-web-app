@@ -43,15 +43,15 @@ nav{
   padding:5px;
 }
 .toInfoCircle{
- position: relative;
- left:180px;
- top:-117px;
- 
+position: relative;
+left:60px;
+top:35px;
 }
 .mainCountryBlock{
-  width:200px;
-  
+  min-width:200px;
+  padding:20px 0;
   display: inline-block;
+  margin-top: -22px;
 }
 .mainCountryWrapper{
   display: flex;
@@ -90,10 +90,15 @@ align-items: center;
   background-color: green;
 }
 .indicationStripe{
-  padding:5px;
-  font-size: 120%;
+  display: flex;
+  
   background-color: hotpink;
   text-align: left;
+
+}
+.selects > *{
+  height: 30px;
+  margin-left: 5px;
 }
 .infoheaderRight{
   font-size: 130%;
@@ -107,4 +112,10 @@ align-items: center;
 width: 50%;
 padding:20px;
   
+}
+.evencol{
+  background-color: rgb(212, 61, 86);
+}
+.oddcol{
+  background-color: rgb(168, 71, 87);
 }

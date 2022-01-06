@@ -3,6 +3,8 @@ import { fetchCountryInfo, getAllData } from '../API'
 import { useDispatch,useSelector } from "react-redux";
 import MainBlock from '../components/MainBlock';
 import MainHeaderBlock from '../components/MainHeaderBlock';
+import { v4 as uuidv4 } from 'uuid';
+
 
 
 const Main = () => {
@@ -31,7 +33,6 @@ const Main = () => {
     }
     const updateList = () => {
         countries = countries.sort((a,b) => b[countriesupdated] - a[countriesupdated])
-        alert(reverse)
     }
       const changeOrder = (e) => {
         countries = countries.reverse()
@@ -41,21 +42,24 @@ const Main = () => {
         <div>
             <MainHeaderBlock />
             <div className="indicationStripe">
-                stats sorted by: 
-                <select onChange={changeMetric} name="" id="">
+                <div className="indicationStripeText">stats sorted by: </div>
+                <div className="selects">
+                <select onChange={changeMetric} >
                     <option value="TotalConfirmed">Total cases</option>
                     <option value="TotalDeaths">Total deaths</option>
                     <option value="NewConfirmed">New cases</option>
                     <option value="NewDeaths">New deaths</option>
                 </select>
-                <select onChange={changeOrder} name="" id="">
+                <select onChange={changeOrder} >
                     <option value='normal'>high to low</option>
                     <option value='reversed'>Low to high</option>
                 </select>
+                </div>
             </div>
             <div className='mainCountryWrapper'>
-          {countries.map((countrObj) => 
-              <MainBlock obj={countrObj} curmetric={countriesupdated} />
+          {countries.map((countrObj,index) => 
+              <MainBlock index={index} obj={countrObj} key={uuidv4()} curmetric={countriesupdated} />
+              
           )}
           </div>
           hello
