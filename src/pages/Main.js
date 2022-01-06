@@ -31,10 +31,11 @@ const Main = () => {
     }
     const updateList = () => {
         countries = countries.sort((a,b) => b[countriesupdated] - a[countriesupdated])
+        alert(reverse)
     }
       const changeOrder = (e) => {
         countries = countries.reverse()
-        changeMetric(e.target.value)
+        setReverse(e.target.value)
     }
     return (
         <div>
