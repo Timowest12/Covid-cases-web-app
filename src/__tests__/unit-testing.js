@@ -8,7 +8,7 @@ test('test to see if app component will render', () => {
   expect(linkElement).toBeInTheDocument();
 });
 it('test if infostat component renders', () => {
-  const { container } = render(<InfoStat />)
+  const { container } = render(<InfoStat />);
 
-  expect(container.firstChild).toHaveClass('infoStatsBlock') 
-})
+  expect(container.firstChild).toHaveClass('infoStatsBlock');
+});

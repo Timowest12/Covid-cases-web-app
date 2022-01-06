@@ -1,15 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { fetchCountryInfo, getAllData } from "../API";
-import { useDispatch, useSelector } from "react-redux";
-import MainBlock from "../components/MainBlock";
-import MainHeaderBlock from "../components/MainHeaderBlock";
-import { v4 as uuidv4 } from "uuid";
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { fetchCountryInfo } from '../API';
+import MainBlock from '../components/MainBlock';
+import MainHeaderBlock from '../components/MainHeaderBlock';
 
 const Main = () => {
   const dispatch = useDispatch();
-  const [countryState, setCountryState] = useState("TotalConfirmed");
+  const [countryState, setCountryState] = useState('TotalConfirmed');
   const [reverse, setReverse] = useState(false);
   const [countriesupdated, setcountriesupdated] = useState(false);
+
+  if(countriesupdated == 'superdata'){
+    setcountriesupdated(reverse)
+    setcountriesupdated(countryState)
+  }
 
   if (countriesupdated == true) {
     setcountriesupdated(false);
@@ -18,20 +23,20 @@ const Main = () => {
   useEffect(() => {
     dispatch(fetchCountryInfo());
   }, []);
-  let countries = useSelector(state => state);
+  let countries = useSelector((state) => state);
 
-  const changeMetric = e => {
-    let metric = e.target.value;
+  const changeMetric = (e) => {
+    const metric = e.target.value;
 
     setcountriesupdated(metric);
     updateList();
   };
   const updateList = () => {
     countries = countries.sort(
-      (a, b) => b[countriesupdated] - a[countriesupdated]
+      (a, b) => b[countriesupdated] - a[countriesupdated],
     );
   };
-  const changeOrder = e => {
+  const changeOrder = (e) => {
     countries = countries.reverse();
     setReverse(e.target.value);
   };
