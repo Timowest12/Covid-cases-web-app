@@ -11,12 +11,13 @@ const Main = () => {
   const [reverse, setReverse] = useState(false);
   const [countriesupdated, setcountriesupdated] = useState(false);
 
-  if(countriesupdated == 'superdata'){
-    setcountriesupdated(reverse)
-    setcountriesupdated(countryState)
+  if (countriesupdated === 'superdata') {
+    setcountriesupdated(reverse);
+    setcountriesupdated(countryState);
+    setCountryState('vaccinedata');
   }
 
-  if (countriesupdated == true) {
+  if (countriesupdated === true) {
     setcountriesupdated(false);
   }
 
@@ -24,6 +25,11 @@ const Main = () => {
     dispatch(fetchCountryInfo());
   }, []);
   let countries = useSelector((state) => state);
+  const updateList = () => {
+    countries = countries.sort(
+      (a, b) => b[countriesupdated] - a[countriesupdated],
+    );
+  };
 
   const changeMetric = (e) => {
     const metric = e.target.value;
@@ -31,11 +37,7 @@ const Main = () => {
     setcountriesupdated(metric);
     updateList();
   };
-  const updateList = () => {
-    countries = countries.sort(
-      (a, b) => b[countriesupdated] - a[countriesupdated],
-    );
-  };
+
   const changeOrder = (e) => {
     countries = countries.reverse();
     setReverse(e.target.value);

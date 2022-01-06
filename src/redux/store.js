@@ -9,6 +9,9 @@ const reducer = (state = initialState, action) => {
   if (action.type === 'updateCountryData') {
     return action.payload.filter((e) => e.CountryCode !== 'FM' && e.CountryCode !== 'MH').sort((a, b) => b.TotalConfirmed - a.TotalConfirmed);
   }
+  if (action.type === 'vaccinedata') {
+    return state;
+  }
   return [];
 };
 

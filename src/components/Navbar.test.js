@@ -1,6 +1,5 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import InfoStat from './InfoStat';
 import Navbar from './Navbar';
 
 it('Test if navbar renders correctly', () => {

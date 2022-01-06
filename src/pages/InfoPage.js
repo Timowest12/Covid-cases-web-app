@@ -6,8 +6,7 @@ import InfoStat from '../components/InfoStat';
 const InfoPage = () => {
   const { country } = useParams();
   const countries = useSelector((state) => state);
-  const countryObj = countries.find((element) => element.Country == country);
-  console.log(countryObj);
+  const countryObj = countries.find((element) => element.Country === country);
   return (
     <div>
       <div className="infohead">
