@@ -15,7 +15,7 @@ run npm start to launch project on local server
 alternatively:
 
 open your terminal
-type `git clone` https://github.com/Timowest12/space-traveler-s-hub.git
+type `git clone` https://github.com/Timowest12/react-redux-capstone.git
 
 type `cd space travelers hub` to change directory to the folder of the project
 
