@@ -43,15 +43,12 @@ nav{
   padding:5px;
 }
 .toInfoCircle{
-position: relative;
-left:60px;
-top:35px;
+
 }
 .mainCountryBlock{
   min-width:200px;
   padding:20px 0;
   display: inline-block;
-  margin-top: -22px;
 }
 .mainCountryWrapper{
   display: flex;
@@ -91,7 +88,6 @@ align-items: center;
 }
 .indicationStripe{
   display: flex;
-  
   background-color: hotpink;
   text-align: left;
 

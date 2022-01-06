@@ -18,7 +18,7 @@ function App() {
        <Provider store={store}>
      <BrowserRouter>
       <Routes>
-        <Route path="/" element={<><Navbar page='Country data' /><Main /></>}>
+        <Route path="/" element={<><Navbar page='World data' /><Main /></>}>
           <Route index element={<Navbar />} />
 
         </Route>

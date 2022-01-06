@@ -8,6 +8,7 @@ const InfoStat = (props) => {
                     <div className="infoStatright">{props.amount}</div>
                 </div>
             </div>
+            
     )
 }
 

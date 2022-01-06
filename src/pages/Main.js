@@ -13,6 +13,7 @@ const Main = () => {
    const [reverse, setReverse] = useState(false)
    //const [metric, setMetric] = useState('TotalConfirmed')
    const [countriesupdated, setcountriesupdated] = useState(false)
+   
    if (countriesupdated == true) {
        
        setcountriesupdated(false)
@@ -38,6 +39,7 @@ const Main = () => {
         countries = countries.reverse()
         setReverse(e.target.value)
     }
+    
     return (
         <div>
             <MainHeaderBlock />

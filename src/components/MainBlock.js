@@ -3,27 +3,51 @@ import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from 'react-icons/bs';
 
 const MainBlock = props => {
+  const [dimensions, setDimensions] = React.useState({ 
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+  function handleResize() {
+    setTimeout(function() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+  }, 100);
     
+  
+}
+
+  window.addEventListener('resize', handleResize)
     let curmetric = [props]
     let image = `/all/${props.obj.CountryCode.toLowerCase()}/vector.svg`;
     let colClass;
-    if (props.index % 2 == 1) {
-      colClass = 'evencol'
+    if (window.innerWidth > 400 && window.innerWidth < 600) {
+      
+      if ((props.index) % 4 == 1 || (props.index - 1) % 4 == 1) {
+        colClass = 'evencol'
+      }else{
+        colClass = 'oddcol'
+      }
     }else{
-      colClass = 'oddcol'
+      if ((props.index) % 2 == 1) {
+        colClass = 'evencol'
+      }else{
+        colClass = 'oddcol'
+      }
     }
-
   return (
       <>
     <Link to={`/infopage/${props.obj.Country}`}>
-      <div className="">{props.index % 2 == 1 ? console.log('hi') : null}</div>
-          <BsArrowRightCircle className='toInfoCircle' />
+      
+          
       <div className={`mainCountryBlock ${colClass}`}>
         <img
           className="countryImg"
           src={image}
           alt=""
         />
+        <BsArrowRightCircle className='toInfoCircle' />
         <div className="mainBlockText">
 
         <div>{props.obj.Country}</div>

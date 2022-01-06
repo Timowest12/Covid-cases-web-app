@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router'
+import InfoStat from '../components/InfoStat';
 
 const InfoPage = () => {
     const { country } = useParams();
@@ -20,36 +21,12 @@ const InfoPage = () => {
             <div className="indicationStripe">
                 stats:
             </div>
-            <div className="infoStatsBlock">
-                <div className="infoStat">
-                    <div className="infoStatLeft">Total cases:</div>
-                    <div className="infoStatright">{countryObj.TotalConfirmed}</div>
-                </div>
-            </div>
-            <div className="infoStatsBlock">
-                <div className="infoStat">
-                    <div className="infoStatLeft">Total deaths:</div>
-                    <div className="infoStatright">{countryObj.TotalDeaths}</div>
-                </div>
-            </div>
-            <div className="infoStatsBlock">
-                <div className="infoStat">
-                    <div className="infoStatLeft">New cases:</div>
-                    <div className="infoStatright">{countryObj.NewConfirmed}</div>
-                </div>
-            </div>
-            <div className="infoStatsBlock">
-                <div className="infoStat">
-                    <div className="infoStatLeft">new deaths:</div>
-                    <div className="infoStatright">{countryObj.NewDeaths}</div>
-                </div>
-            </div>
-            <div className="infoStatsBlock">
-                <div className="infoStat">
-                    <div className="infoStatLeft">new recovered:</div>
-                    <div className="infoStatright">{countryObj.NewRecovered}</div>
-                </div>
-            </div>
+            <InfoStat metric='Total casess:' amount={countryObj.TotalConfirmed} />
+            <InfoStat metric='Total deaths:' amount={countryObj.TotalDeaths} />
+            <InfoStat metric='New cases:' amount={countryObj.TotalDeaths} />
+            <InfoStat metric='New deaths:' amount={countryObj.TotalDeaths} />
+            
+            
         </div>
     )
 }
