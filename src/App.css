@@ -1,46 +1,20 @@
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 120%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 nav{
   background-color: hotpink;
   display: flex;
   justify-content: space-between;
   padding:5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 .toInfoCircle{
 
@@ -90,11 +64,12 @@ align-items: center;
   display: flex;
   background-color: hotpink;
   text-align: left;
-
+  padding:10px;
 }
 .selects > *{
   height: 30px;
   margin-left: 5px;
+  
 }
 .infoheaderRight{
   font-size: 130%;
@@ -109,9 +84,24 @@ width: 50%;
 padding:20px;
   
 }
+.txtAlighnRight{
+  text-align: right;
+}
 .evencol{
   background-color: rgb(212, 61, 86);
 }
 .oddcol{
   background-color: rgb(168, 71, 87);
+}
+.mainBlockText{
+  padding-right: 5px;
+  color: white;
+  text-align: right;
+}
+.mainBlockCountryTxt{
+  font-weight: 700;
+}
+.mainBlockCountryNmbr{
+  font-size: 80%;
+  font-weight: 200;
 }

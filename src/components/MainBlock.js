@@ -48,10 +48,10 @@ const MainBlock = props => {
           alt=""
         />
         <BsArrowRightCircle className='toInfoCircle' />
-        <div className="mainBlockText">
+        <div className="mainBlockText txtAighnRight">
 
-        <div>{props.obj.Country}</div>
-        <div>{props.obj[props.curmetric == false ? 'TotalConfirmed' : props.curmetric]}</div>
+        <div className='mainBlockCountryTxt'>{props.obj.Country}</div>
+        <div className='mainBlockCountryNmbr'>{props.obj[props.curmetric == false ? 'TotalConfirmed' : props.curmetric]}</div>
         </div>
       </div>
     </Link>
