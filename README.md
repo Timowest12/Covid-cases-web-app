@@ -1,6 +1,7 @@
 # Covid cases project
 
 This project uses the Covid cases API to pull in a list of active corona infection and related data!
+Project demo deployed with netlify: https://competent-carson-21737c.netlify.app/
 
 
 This project was created using React(JavaScript) and Redux,
